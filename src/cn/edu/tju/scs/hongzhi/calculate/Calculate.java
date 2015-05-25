@@ -2,20 +2,20 @@ package cn.edu.tju.scs.hongzhi.calculate;
 
 public class Calculate {
 	
-	public static int add (int a, int b) {
+	public static long add (long a, long b) {
 		return a+b;
 	}
 	
-	public static int substract (int a, int b) {
+	public static long substract (long a, long b) {
 		return a-b;
 	}
 	
- 	public static int multiply (int a, int b) {
+ 	public static long multiply (long a, long b) {
  		return a*b;
  	}
  	
- 	public static float divide(int a, int b) {
- 		return ((float)a)/((float)b);
+ 	public static double divide(long a, long b) {
+ 		return ((double)a)/((double)b);
  	}
  	
 }

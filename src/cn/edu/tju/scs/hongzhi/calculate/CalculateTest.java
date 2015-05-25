@@ -1,16 +1,12 @@
 package cn.edu.tju.scs.hongzhi.calculate;
 
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 public class CalculateTest {
 
 	int[] a = {-1, 1, 0, Integer.MIN_VALUE, Integer.MAX_VALUE};
 	int[] b = {1, 1, -1, -2};
-	long[] expAdd = {0, 2, 1, Integer.MIN_VALUE+1, Integer.MAX_VALUE+1};
-	long[] expSub = {-2, 0, -1, Integer.MIN_VALUE-1, Integer.MAX_VALUE-1};
-	long[] expMul = {1, -1, 0, Integer.MIN_VALUE*-1, Integer.MAX_VALUE*-1};
  	
 	@Test
 	public void testAdd() {
@@ -36,7 +32,7 @@ public class CalculateTest {
 	@Test
 	public void testDivide() {
 		for (int i = 0; i< 5; i++) {
-			assertEquals((double)a[i]/b[3], Calculate.divide(a[i], b[3]));
+			assertEquals((double)a[i]/b[3], Calculate.divide(a[i], b[3]), 0.0001);
 		}
 	}
 
